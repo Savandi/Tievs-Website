@@ -18,10 +18,12 @@
     <link href="vendor/css/bundle.min.css" rel="stylesheet">
     <link href="vendor/css/revolution-settings.min.css" rel="stylesheet">
     <!-- Plugin Css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/css/swiper.min.css" rel="stylesheet">
     <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
+
     <!-- Style Sheet -->
     <link href="agency/css/style.css" rel="stylesheet">
 </head>
@@ -49,7 +51,7 @@
                 <!--Logo Default-->
                 Tievs
             </a>
-           
+
             <!--Nav Links-->
             <div class="collapse navbar-collapse" id="agency">
                 <div class="navbar-nav ml-auto">
@@ -489,7 +491,7 @@
                                 </div>
                             </a>
                         </div>
-                        
+
                     <!-- LAYER NR. 13 -->
                     <div class="tp-caption   tp-resizeme"
                          data-frames='[{"delay":990,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":700,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -686,38 +688,90 @@
 <!--Services End-->
 
 <!--Counters Start-->
-<section class="gradient-bg2" id="counters">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 pl-lg-4 order-lg-2 wow fadeInRight">
-                <div class="heading-area">
-                    <span class="sub-title text-white">We are megaone company</span>
-                    <h2 class="title text-white">We have done some great <span class="js-rotating">stuff, idea</span>.
-                    </h2>
-                    <p class="para text-white">There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form, by injected.</p>
+<section class="" id="counters">
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 pl-lg-4 order-lg-2 wow fadeInRight">-->
+<!--                <div class="heading-area">-->
+<!--                    <span class="sub-title text-white">We are megaone company</span>-->
+<!--                    <h2 class="title text-white">We have done some great <span class="js-rotating">stuff, idea</span>.-->
+<!--                    </h2>-->
+<!--                    <p class="para text-white">There are many variations of passages of Lorem Ipsum available, but the-->
+<!--                        majority have suffered alteration in some form, by injected.</p>-->
+<!--                </div>-->
+<!--                <ul class="counter-list list-unstyled">-->
+<!--                    <li class="counter-item">-->
+<!--                        <i aria-hidden="true" class="fas fa-users text-white"></i>-->
+<!--                        <h6 class="counter-number text-white"><span class="count">500</span>+</h6>-->
+<!--                        <p class="sub-title text-white">Happy Clients</p>-->
+<!--                    </li>-->
+<!--                    <li class="counter-item">-->
+<!--                        <i aria-hidden="true" class="fas fa-list-alt text-white"></i>-->
+<!--                        <h6 class="counter-number text-white"><span class="count">1074</span>+</h6>-->
+<!--                        <p class="sub-title text-white">Lines Of Code</p>-->
+<!--                    </li>-->
+<!--                    <li class="counter-item">-->
+<!--                        <i aria-hidden="true" class="fas fa-award text-white"></i>-->
+<!--                        <h6 class="counter-number text-white"><span class="count">600</span>+</h6>-->
+<!--                        <p class="sub-title text-white">Project Completed</p>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6 wow fadeInLeft">-->
+<!--                <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">-->
+<!--                    <img alt="vector" src="agency/img/vector-art-3.png">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="container  mx-auto w-full h-full">
+        <div class="relative wrap overflow-hidden p-10 h-full">
+            <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
                 </div>
-                <ul class="counter-list list-unstyled">
-                    <li class="counter-item">
-                        <i aria-hidden="true" class="fas fa-users text-white"></i>
-                        <h6 class="counter-number text-white"><span class="count">500</span>+</h6>
-                        <p class="sub-title text-white">Happy Clients</p>
-                    </li>
-                    <li class="counter-item">
-                        <i aria-hidden="true" class="fas fa-list-alt text-white"></i>
-                        <h6 class="counter-number text-white"><span class="count">1074</span>+</h6>
-                        <p class="sub-title text-white">Lines Of Code</p>
-                    </li>
-                    <li class="counter-item">
-                        <i aria-hidden="true" class="fas fa-award text-white"></i>
-                        <h6 class="counter-number text-white"><span class="count">600</span>+</h6>
-                        <p class="sub-title text-white">Project Completed</p>
-                    </li>
-                </ul>
+                <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
             </div>
-            <div class="col-lg-6 wow fadeInLeft">
-                <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                    <img alt="vector" src="agency/img/vector-art-3.png">
+
+            <!-- left timeline -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                </div>
+                <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+
+            <!-- right timeline -->
+            <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                </div>
+                <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
+                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+
+            <!-- left timeline -->
+            <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                <div class="order-1 w-5/12"></div>
+                <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+                    <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                </div>
+                <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                    <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
+                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
         </div>
