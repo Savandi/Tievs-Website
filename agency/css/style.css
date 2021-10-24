@@ -1004,15 +1004,23 @@ span.anchor-circle{
 
 .quote-content{
     text-align: center;
-    max-width: 900px;
-    padding: 50px 150px;
+    max-width: 95%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 60px;
+    background: #ebc054;
+    background: -moz-linear-gradient(left, #ebc054 2%, #f4edb8 82%);
+    background: -webkit-linear-gradient(left, #ebc054 2%, #f4edb8 82%);
+    background: linear-gradient(to right, #ebc054 2%, #f4edb8 82%);
+    opacity: 1;
+    pointer-events: auto;
     overflow: visible;
 }
 
 .quote-content .contact-form .form-control{
     border: none;
     border-bottom: 1px solid #d4d4d4;
-    border-radius: 0;
+    border-radius: 2;
     padding: 0;
 }
 
@@ -1143,7 +1151,7 @@ span.anchor-circle{
 }
 
 .heading-area .title{
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
     margin: 15px 0 25px;
 }
@@ -1583,6 +1591,7 @@ span.anchor-circle{
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
+    align-content: center;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -1603,11 +1612,8 @@ span.anchor-circle{
 
 .news-item .news-text-box{
     padding: 30px;
+    align-content: center;
     background-color: #fff;
-}
-
-.news-item .date{
-    font-weight: 400;
 }
 
 .news-item .news-title{
@@ -3276,7 +3282,7 @@ input.inputerror, textarea.inputerror, select.inputerror {
     }
 
     .heading-area .title {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .news-item .news-title {
