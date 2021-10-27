@@ -208,6 +208,76 @@ classified advertising systems, thus precipitated this research to contrive a de
                 </div>
             </div>
         </div>
+        <!--Get Price Prediction Methodology Model Popup-->
+        <div class="animated-modal hidden quote-content" id="pricePrediction">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                            Exploratory data analysis (EDA) was done primarily to gain an expressive perception in the forms of bar charts, scatter plots, box plots, heat maps, distribution graphs, etc. and examine variable diversity, data field ranges, and correlation between each feature, including price. Correlation metrics showed that year and odometer were the most impactful for price. In view of a copious dataset and a limitation on computational resources, 100,000 records were accounted for price prediction model implementation. 
+                            Some further data preprocessing undertaken were Omitting 11 advertisement attributes due to their proved insignificancy for model performance [22], and retaining impactful features as year, manufacturer, model, condition, cylinders, fuel, odometer, title status, transmission, drive, size, type, paint color (Feature engineering and selection),
+                            filtering out records with unrealistic price values, removing records with null prices, filling attribute null values with respective mean/mode values (Imputation),
+                            selecting records where year >= 1975, price <= $100000 and price >= $750 (Handling Outliers), and categorical variable conversion to numerical with One- Hot-Encoding method which transforms values into either 1 or 0, giving it a realistic data interpretation than Label Encoding. 
+                            A comparative study was conducted focusing on the performance of 15 ML algorithms available in the Scikit-learn library, namely Extra Trees, Bagging, RF, Gradient Boosting, Decision Trees, K-nearest Neighbors (KNN), Support Vector Machine (SVM), Lasso, Ridge, Elastic Net, AdaBoost, Multilayer Perceptron (MLP), Linear SVR, Stochastic Gradient Descent (SGD), and Multiple Linear Regressors. 
+                            Feature scaling (normalization) was used to deal with KNN, SVR and SGD regressors. Each model was trained and evaluated with the same train, and test data associating K- Fold Cross-Validation with a split ratio of 75:25:10 multiple times to make the models less biased and account for every observation until satisfactory results emerge, and overfitting was eradicated to a commendable extent, enhancing generalization.
+                        </p>
+                        </div>
+                 
+                </div>
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                         Regression-based model proficiency in forecasting continuous values [9], unselected classification route for this study. RandomizedSearchCV and GridSearchCV were used when determining the most optimized hyperparameters for the success of the above models. R-squared value (R2), adjusted R2, relative squared error (RSE), and root mean square error (RMSE) was used as accuracy criterion to determine the top 4 exemplary models. Those premium models were then ensembled together using a stacking regressor model.
+                         Ultimately, the model was serialized using Pickle and lodged with the Flask REST API’s ‘predict-price’ endpoint for efficient price prediction and visualization through the advertisement submission form in Tievs front-end app.
+                    </p>
+                    </div>
+                    <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                        <img alt="image" src="agency/img/work-3.jpg">
+                    </div>
+                    
+                </div>
+             
+        </div>
+            <!--Button-->
+            <div class="col-md-12">
+                <div class="form-check">
+                    <label class="checkbox-lable">
+                        <input type="checkbox" style="visibility: hidden;">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--Get Recommendation Methodology Model Popup-->
+        <div class="animated-modal hidden quote-content" id="recommendation">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                        <img alt="image" src="agency/img/vector-art-4.png">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                            The consequent steps discussed were exerted when implementing the ad feature assimilated recommendation engine, which is ingenious in nature and unfathomed within its field of research. First of all, Id and description columns of 18,035 car records from the 'Used Car Dataset' were extracted after handling null and irrelevant values. Then, the description content was cleansed with a complex regex function prior to lowercase conversion and Penn Treebank tokenizing.
+                            Concluding those procedures, the description content was sent into TensorFlow USE model trained with a Deep Averaging Network (DAN) encoder, which uses DNN to find the best combination of 512-dimensional vector embeddings. It was used upon the tokenized form to give NLP incurred ad relatedness. DAN trained the encoder itself by having preconfigured parameters built within its library for the encoder to map any text into embeddings, as shown in the below figure.
+                            Furthermore, a Golang API was created to calculate the cosine similarity of those generated embeddings prior to sorting them from highest to lowest. New embedding generation for freshly submitted ads was supported from this API; hence concurrently handling the similarity calculations with new embedding generation promoted optimized CPU utilization and process efficiency.
+                            As the final step, the id and similarity scores were able to be calculated and returned into the Tievs front-end app to be displayed according to customer's preference. The model infused API and the front-end environment was ultimately deployed in the DigitalOcean cloud environment. 
+                            Classifieds are often updated. On that account, imperative embedding creation when a new ad is submitted will not disturb the overall prompt, lower latency recommendation procedure. Thus, model retraining is deemed unnecessary, unlike other traditional recommendation techniques.
+                            </p>
+                    </div>
+                </div>
+        </div>
+            <!--Button-->
+            <div class="col-md-12">
+                <div class="form-check">
+                    <label class="checkbox-lable">
+                        <input type="checkbox" style="visibility: hidden;">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
 </header>
 <!--Header End-->
 
@@ -688,10 +758,10 @@ classified advertising systems, thus precipitated this research to contrive a de
                 <div class="heading-area">
                     <span class="sub-title">Let's Dive in to our Research Methodology</span>
                     <h2 class="title">First, Give Attention to our <span class="alt-color">High-Level System Architecture</span> Shown Here  <i class="fas fa-arrow-right hvr-pulse-shrink"></i></h2>
-                    <p class="para" style="text-align: justify;">The system architecture defines an abstract view of how the main components are integrated and connected with all other elements of the entire Tievs system and how each of them communicate with one another. The methodology procedures
+                    <p class="para" style="text-align: justify;">The system architecture defines an abstract overview of how the main components are integrated and connected with all other elements of the entire Tievs system and how each of them communicate with one another. The methodology procedures
                         undertaken regarding each significant research component can be realized by navigating through the below sections. 
                     </p>
-                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;">Novel Recommendation System 
+                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;" data-fancybox data-src="#recommendation">Novel Recommendation System 
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -701,7 +771,7 @@ classified advertising systems, thus precipitated this research to contrive a de
                             </ul>
                         </div>
                     </a>
-                    <a class="btn btn-large btn-rounded btn-midnight btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;">Reliable Price Prediction System 
+                    <a class="btn btn-large btn-rounded btn-midnight btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;" data-fancybox data-src="#pricePrediction">Reliable Price Prediction System 
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -742,6 +812,40 @@ classified advertising systems, thus precipitated this research to contrive a de
 </section>
 <!--Methodology End-->
 
+<!--Tools & Technologies Start-->
+<section class="bg-light" style="margin-top: 2%;">
+    <div class="container" style="margin-top: -6%; margin-bottom: -6%;">
+        <div class="row">
+            <div class="col-lg-6 wow fadeInLeft">
+                <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                    <img alt="image" src="agency/img/vector-art-4.png">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight">
+                <div class="heading-area">
+                    <span class="sub-title">Utilized Tools & Technologies</span>
+                    <h2 class="title"><span class="main-color js-rotating">Robust Design, Creative Idea</span> and
+                        Development Solutions</h2>
+                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
+                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink mt-3" href="javascript:void(0);">Learn
+                        More
+                        <div class="btn-hvr-setting">
+                            <ul class="btn-hvr-setting-inner">
+                                <li class="btn-hvr-effect"></li>
+                                <li class="btn-hvr-effect"></li>
+                                <li class="btn-hvr-effect"></li>
+                                <li class="btn-hvr-effect"></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Tools & Technologies End-->
 
 <!--Milestone Start-->
 <div class="gradient-bg2" id="milestones" style="margin-top: 2%;">
@@ -835,40 +939,7 @@ classified advertising systems, thus precipitated this research to contrive a de
 </div>
 <!--Milestone End-->
 
-<!--Parallax Start-->
-<section class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 wow fadeInLeft">
-                <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                    <img alt="image" src="agency/img/vector-art-4.png">
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight">
-                <div class="heading-area">
-                    <span class="sub-title">We are megaone company</span>
-                    <h2 class="title"><span class="main-color js-rotating">Robust Design, Creative Idea</span> and
-                        Development Solutions</h2>
-                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
-                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink mt-3" href="javascript:void(0);">Learn
-                        More
-                        <div class="btn-hvr-setting">
-                            <ul class="btn-hvr-setting-inner">
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Parallax End-->
+
 
 <!--Portfolio Start-->
 <section class="cube-portfolio1 text-center no-transition" id="portfolio">
