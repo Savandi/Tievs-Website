@@ -58,7 +58,7 @@
                     <a class="nav-link link scroll active" href="#home">Home</a>
                     <a class="nav-link link scroll" href="#domain">Domain</a>
                     <a class="nav-link link scroll" href="#milestones">Milestones</a>
-                    <a class="nav-link link scroll" href="#clients">Docs</a>
+                    <a class="nav-link link scroll" href="#docs">Docs</a>
                     <a class="nav-link link scroll" href="#clients">Presentations</a>
                     <a class="nav-link link scroll" href="#about-us-team">About Us</a>
                     <a class="nav-link link scroll" href="#contact">Contact Us</a>
@@ -102,7 +102,7 @@
                             <span class="anchor-circle"></span>
                             <span class="anchor-text">Milestones</span>
                         </a></li>
-                        <li><a class="link scroll" href="#clients">
+                        <li><a class="link scroll" href="#docs">
                             <span class="anchor-circle"></span>
                             <span class="anchor-text">Documents</span>
                         </a></li>
@@ -208,6 +208,36 @@ classified advertising systems, thus precipitated this research to contrive a de
                 </div>
             </div>
         </div>
+        <!--Get Recommendation Methodology Model Popup-->
+        <div class="animated-modal hidden quote-content" id="recommendation">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                        <img alt="image" src="agency/img/vector-art-4.png">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                            The consequent steps discussed were exerted when implementing the ad feature assimilated recommendation engine, which is ingenious in nature and unfathomed within its field of research. First of all, Id and description columns of 18,035 car records from the 'Used Car Dataset' were extracted after handling null and irrelevant values. Then, the description content was cleansed with a complex regex function prior to lowercase conversion and Penn Treebank tokenizing.
+                            Concluding those procedures, the description content was sent into TensorFlow USE model trained with a Deep Averaging Network (DAN) encoder, which uses DNN to find the best combination of 512-dimensional vector embeddings. It was used upon the tokenized form to give NLP incurred ad relatedness. DAN trained the encoder itself by having preconfigured parameters built within its library for the encoder to map any text into embeddings, as shown in the below figure.
+                            Furthermore, a Golang API was created to calculate the cosine similarity of those generated embeddings prior to sorting them from highest to lowest. New embedding generation for freshly submitted ads was supported from this API; hence concurrently handling the similarity calculations with new embedding generation promoted optimized CPU utilization and process efficiency.
+                            As the final step, the id and similarity scores were able to be calculated and returned into the Tievs front-end app to be displayed according to customer's preference. The model infused API and the front-end environment was ultimately deployed in the DigitalOcean cloud environment. 
+                            Classifieds are often updated. On that account, imperative embedding creation when a new ad is submitted will not disturb the overall prompt, lower latency recommendation procedure. Thus, model retraining is deemed unnecessary, unlike other traditional recommendation techniques.
+                            </p>
+                    </div>
+                </div>
+        </div>
+            <!--Button-->
+            <div class="col-md-12">
+                <div class="form-check">
+                    <label class="checkbox-lable">
+                        <input type="checkbox" style="visibility: hidden;">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
         <!--Get Price Prediction Methodology Model Popup-->
         <div class="animated-modal hidden quote-content" id="pricePrediction">
             <div class="row">
@@ -248,8 +278,44 @@ classified advertising systems, thus precipitated this research to contrive a de
                 </div>
             </div>
         </div>
-        <!--Get Recommendation Methodology Model Popup-->
-        <div class="animated-modal hidden quote-content" id="recommendation">
+        <!--Get Fraud Content Methodology Model Popup-->
+        <div class="animated-modal hidden quote-content" id="fraudContent">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                            Aiming to foresee the likelihood of fraudulent content prior ad submission, an initial dataset of 23,000 records was labelled as legitimate and illegitimate, where the latter was prepared by the authors themselves. The fraud detection model involves a sequence of stages that constructs an effective ML model, as depicted in the Fig 3. Succeeding EDA, “Stop Words” technique, which is often perceived in writing regardless of context, including words as “the,” “a,” “an,” “but,” “in,” “because,” etc. was utilized to eliminate all interference from inputs that would otherwise obstruct the potential to distinguish positive and negative classifiers. Snowball Stemmer algorithm, which eliminates affixes to retrieve the basic form of words, was utilized as a stemming technique due to its computational speed. 
+                            Moreover, raw text was essentially converted into a number of vectors to perform in ML models due to its impotence to directly operate textual forms. Then, a Bag of Words (BOW) model was developed to extract characteristics from the text before the implementation of the TF-IDF NLP vectorization technique to evaluate the significance of text data and serialize them for further transformation.
+                            Subsequently, the Scikit-learn library was utilized to convert text content into a matrix of numbers that could be fed to the classifier. This study was initiated to evaluate the expertise of 7 ML algorithms such as Decision Tree, RF, SVM, KNN, XGBoost, XGBRF, and Light Gradient Boosting Machine (LightGBM) classifier in a comparative analysis after vectorization. Each classifier was trained and tested in the same 75:25 ratio until the optimal model would be exposed in terms of F1 score (accuracy and recall) and confusion matrix.
+                        </p>
+                        </div>
+                 
+                </div>
+                <div class="col-lg-6">
+                    <div class="heading-area">
+                        <br><br><p class="para" style="font-size: medium; text-align: justify;">
+                           Based on iteration, the highest max depth value was identified from parameter tuning compared with depth-wise growth and competency to accomplish random grid selection of the most pertinent parameters for the best classifier. After successful embedding of the trained model in the REST API, it could classify ad content as legitimate or not and display caution Tievs near advertisement submission when indispensable.
+                    </p>
+                    </div><br>
+                    <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                        <img alt="image" src="agency/img/work-3.jpg">
+                    </div>
+                    
+                </div>
+             
+        </div>
+            <!--Button-->
+            <div class="col-md-12">
+                <div class="form-check">
+                    <label class="checkbox-lable">
+                        <input type="checkbox" style="visibility: hidden;">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--Get Fraud Image Methodology Model Popup-->
+        <div class="animated-modal hidden quote-content" id="fraudImage">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
@@ -259,11 +325,8 @@ classified advertising systems, thus precipitated this research to contrive a de
                 <div class="col-lg-6">
                     <div class="heading-area">
                         <br><br><p class="para" style="font-size: medium; text-align: justify;">
-                            The consequent steps discussed were exerted when implementing the ad feature assimilated recommendation engine, which is ingenious in nature and unfathomed within its field of research. First of all, Id and description columns of 18,035 car records from the 'Used Car Dataset' were extracted after handling null and irrelevant values. Then, the description content was cleansed with a complex regex function prior to lowercase conversion and Penn Treebank tokenizing.
-                            Concluding those procedures, the description content was sent into TensorFlow USE model trained with a Deep Averaging Network (DAN) encoder, which uses DNN to find the best combination of 512-dimensional vector embeddings. It was used upon the tokenized form to give NLP incurred ad relatedness. DAN trained the encoder itself by having preconfigured parameters built within its library for the encoder to map any text into embeddings, as shown in the below figure.
-                            Furthermore, a Golang API was created to calculate the cosine similarity of those generated embeddings prior to sorting them from highest to lowest. New embedding generation for freshly submitted ads was supported from this API; hence concurrently handling the similarity calculations with new embedding generation promoted optimized CPU utilization and process efficiency.
-                            As the final step, the id and similarity scores were able to be calculated and returned into the Tievs front-end app to be displayed according to customer's preference. The model infused API and the front-end environment was ultimately deployed in the DigitalOcean cloud environment. 
-                            Classifieds are often updated. On that account, imperative embedding creation when a new ad is submitted will not disturb the overall prompt, lower latency recommendation procedure. Thus, model retraining is deemed unnecessary, unlike other traditional recommendation techniques.
+                            The Deep Learning algorithm, Convolution Neural Network (CNN), was stipulated and in its convolutional layer, initial image feature learning was done using the vehicle/non-vehicle image set to extract characteristics such as gradient orientation, colors, edges etc., assign weights and compress them dimensionally as convolved features compared to the original image. GREY scaling the data to execute image preparation procedures such as image rotation, resizing, and part extractions were done using Keras API. Next, the pooling layer reduced spatial size further while extracting superior traits and optimizing processing power. These 2 layers executed continuously and fastidiously trained the CNN model in discerning image qualities successfully.
+                            The final output was flattened and column vectorized before classification through a fully connected feed-forward neural network layer. With backpropagation applied iterative training, the model could discriminate high/low-level image features preparatory to effectuating Softmax classification. After the model was thoroughly tested on the accuracy, it was capable of identifying ad permissible car images by the manufacturer as well as prohibited images. The specific ML API was created using the Django framework and integrated with the trained model before being implied into the front-end application to detect inappropriate images and display warning signs necessarily. CNN differentiates from the traditional model by using only a few parameters to reduce overfitting probability and considering neighbor context (images in this scenario) information to note similarities.
                             </p>
                     </div>
                 </div>
@@ -529,7 +592,7 @@ classified advertising systems, thus precipitated this research to contrive a de
 
                          style="z-index: 15; min-width: 651px; max-width: 651px; white-space: normal; font-size: 20px; line-height: 30px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Roboto;">
                         <br><br>Tievs is fundamentally a classified advertising system which is enhanced and ameliorated
-                         using Machine Learning and Deep Learning technologies to obtain a competitive edge among similar existing platforms. A thorough scientific research was conducted by our team to explore and verify the most optimal solution.
+                         using Machine Learning and Deep Learning technologies to obtain a competitive edge among similar existing platforms. A thorough scientific research was conducted by our team to explore and verify the most optimal solution in relevance to this particular research domain.
                     </div>
 
                     <!-- LAYER NR. 12 -->
@@ -781,7 +844,7 @@ classified advertising systems, thus precipitated this research to contrive a de
                             </ul>
                         </div>
                     </a><br>
-                    <a class="btn btn-large btn-rounded btn-purple btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;">Fraud Content Detection System 
+                    <a class="btn btn-large btn-rounded btn-purple btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;" data-fancybox data-src="#fraudContent">Fraud Content Detection System 
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -790,7 +853,7 @@ classified advertising systems, thus precipitated this research to contrive a de
                                 <li class="btn-hvr-effect"></li>
                             </ul>
                         </div>
-                    </a>           <a class="btn btn-large btn-rounded btn-pink btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;">Inexact Image Detection System 
+                    </a>           <a class="btn btn-large btn-rounded btn-pink btn-hvr-green mt-3" href="javascript:void(0);" style="margin-left: 20%;" data-fancybox data-src="#fraudImage">Inexact Image Detection System 
                         <div class="btn-hvr-setting">
                             <ul class="btn-hvr-setting-inner">
                                 <li class="btn-hvr-effect"></li>
@@ -823,23 +886,12 @@ classified advertising systems, thus precipitated this research to contrive a de
             </div>
             <div class="col-lg-6 wow fadeInRight">
                 <div class="heading-area">
-                    <span class="sub-title">Utilized Tools & Technologies</span>
-                    <h2 class="title"><span class="main-color js-rotating">Robust Design, Creative Idea</span> and
-                        Development Solutions</h2>
-                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority
-                        have suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
-                    <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink mt-3" href="javascript:void(0);">Learn
-                        More
-                        <div class="btn-hvr-setting">
-                            <ul class="btn-hvr-setting-inner">
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                                <li class="btn-hvr-effect"></li>
-                            </ul>
-                        </div>
-                    </a>
+                    <span class="sub-title">Get to Know the Tools & Technologies Our Team Exploited</span>
+                    <h2 class="title"><span class="main-color js-rotating">Robust Development, Convinient Designs, Creative Approaches, Efficient Functionality, Effective Implementations </span> Facilitated By 
+                        Our Employed Tools & Technologies</h2>
+                    <p class="para" style="text-align: justify;">There were many types of leading edge technologies and tools which our team used for designing and developing Machine Learning, Natural Language Processing, and Deep Learning models and API implementations which were necessary for our research execution and final Tievs system inauguration. Database management and cloud deployment of the relevant components were assisted by some of those as well. The logos of the intrinsic technologies and tools that were considered are depicted by the illustration being shown.
+                </p>
+       
                 </div>
             </div>
         </div>
@@ -941,8 +993,8 @@ classified advertising systems, thus precipitated this research to contrive a de
 
 
 
-<!--Portfolio Start-->
-<section class="cube-portfolio1 text-center no-transition" id="portfolio">
+<!--Documents Start-->
+<section class="cube-portfolio1 text-center no-transition" id="docs">
     <div class="container">
         <!--Row-->
         <div class="row">
@@ -1108,7 +1160,7 @@ classified advertising systems, thus precipitated this research to contrive a de
         </div>
     </div>
 </section>
-<!--Portfolio End-->
+<!--Documents End-->
 
 <!--Testimonial Start-->
 <section class="gradient-bg1 text-center" id="clients">
