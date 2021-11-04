@@ -1133,6 +1133,7 @@ span.anchor-circle{
     line-height: 1.5;
     padding: 40px 60px;
     opacity: 1;
+    margin: 2%;
     pointer-events: auto;
     overflow: visible;
     /* border-radius: 10%; */
@@ -3207,6 +3208,13 @@ input.inputerror, textarea.inputerror, select.inputerror {
     left: 0;
     border-radius: 50%;
 }
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
 @-moz-keyframes preloader {
     17% {
