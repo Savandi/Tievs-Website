@@ -1026,6 +1026,106 @@ span.anchor-circle{
     border-radius: 1%;
 }
 
+/* ===================================
+   Get Recommendation Metho Popup
+====================================== */
+
+.rec-quote-content{
+    text-align: center;
+    max-width: 90%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 60px;
+    /* background: -moz-linear-gradient(left,  #aec2fbf5 2%, #fbfbfb 82% );
+    background: -webkit-linear-gradient(left, #aec2fbf5 2%, #fbfbfb 82% );
+    background: linear-gradient(to right,  #aec2fbf5 2%, #fbfbfb 82% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 ); */
+    background: #2083cf;
+    background: -moz-linear-gradient(left, #c2a8d5 2%, #2083cf 82%);
+    background: -webkit-linear-gradient(left, #c2a8d5 2%, #2083cf 82%);
+    background: linear-gradient(to right, #c2a8d5 2%, #2083cf 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 );
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
+    border-radius: 1%;
+}
+
+/* ===================================
+   Get Price Prediction Metho Popup
+====================================== */
+
+.pri-quote-content{
+    text-align: center;
+    max-width: 90%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 60px;
+    /* background: -moz-linear-gradient(left,  #aec2fbf5 2%, #fbfbfb 82% );
+    background: -webkit-linear-gradient(left, #aec2fbf5 2%, #fbfbfb 82% );
+    background: linear-gradient(to right,  #aec2fbf5 2%, #fbfbfb 82% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 ); */
+    background: #3264f5;
+    background: -moz-linear-gradient(left, #7b3ea7 2%, #3264f5 82%);
+    background: -webkit-linear-gradient(left, #7b3ea7 2%, #3264f5 82%);
+    background: linear-gradient(to right, #7b3ea7 2%, #3264f5 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 );
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
+    border-radius: 1%;
+}
+
+/* ===================================
+   Get Fraud Content Metho Popup
+====================================== */
+
+.fc-quote-content{
+    text-align: center;
+    max-width: 90%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 60px;
+    /* background: -moz-linear-gradient(left,  #aec2fbf5 2%, #fbfbfb 82% );
+    background: -webkit-linear-gradient(left, #aec2fbf5 2%, #fbfbfb 82% );
+    background: linear-gradient(to right,  #aec2fbf5 2%, #fbfbfb 82% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 ); */
+    background: #2083cf;
+    background: -moz-linear-gradient(left, #c2a8d5 2%, #2083cf 82%);
+    background: -webkit-linear-gradient(left, #c2a8d5 2%, #2083cf 82%);
+    background: linear-gradient(to right, #c2a8d5 2%, #2083cf 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 );
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
+    border-radius: 1%;
+}
+
+/* ===================================
+   Get Fraud Image Metho  Model Popup
+====================================== */
+
+.fi-quote-content{
+    text-align: center;
+    max-width: 90%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 60px;
+    /* background: -moz-linear-gradient(left,  #aec2fbf5 2%, #fbfbfb 82% );
+    background: -webkit-linear-gradient(left, #aec2fbf5 2%, #fbfbfb 82% );
+    background: linear-gradient(to right,  #aec2fbf5 2%, #fbfbfb 82% );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 ); */
+    background: #3264f5;
+    background: -moz-linear-gradient(left, #7b3ea7 2%, #3264f5 82%);
+    background: -webkit-linear-gradient(left, #7b3ea7 2%, #3264f5 82%);
+    background: linear-gradient(to right, #7b3ea7 2%, #3264f5 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 );
+    opacity: 1;
+    pointer-events: auto;
+    overflow: visible;
+    border-radius: 1%;
+}
+
 .container{
     text-align: center;
     max-width: 90%;
@@ -1143,12 +1243,113 @@ span.anchor-circle{
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
+.rec-quote-content .fancybox-close-small {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: #F023B6;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.pri-quote-content .fancybox-close-small {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: #F023B6;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.fc-quote-content .fancybox-close-small {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: #F023B6;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.fi-quote-content .fancybox-close-small {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: #F023B6;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
 .quote-content .fancybox-close-small:hover,.quote-content .fancybox-close-small:focus{
     background: #00bcd4;
 }
+.rec-quote-content .fancybox-close-small:hover,.quote-content .fancybox-close-small:focus{
+    background: #00bcd4;
+}
+.pri-quote-content .fancybox-close-small:hover,.quote-content .fancybox-close-small:focus{
+    background: #00bcd4;
+}
+.fc-quote-content .fancybox-close-small:hover,.quote-content .fancybox-close-small:focus{
+    background: #00bcd4;
+}
+.fi-quote-content .fancybox-close-small:hover,.quote-content .fancybox-close-small:focus{
+    background: #00bcd4;
+}
 
 .quote-content .fancybox-close-small:after {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -1px;
+    font: initial;
+    font-size: 35px;
+    color: #fff;
+}
+
+.rec-quote-content .fancybox-close-small:after {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -1px;
+    font: initial;
+    font-size: 35px;
+    color: #fff;
+}
+.pri-quote-content .fancybox-close-small:after {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -1px;
+    font: initial;
+    font-size: 35px;
+    color: #fff;
+}
+.fc-quote-content .fancybox-close-small:after {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -1px;
+    font: initial;
+    font-size: 35px;
+    color: #fff;
+}
+.fi-quote-content .fancybox-close-small:after {
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -1168,6 +1369,25 @@ span.anchor-circle{
     background-color: transparent;
 }
 
+.rec-quote-content .fancybox-close-small:hover:after,
+.rec-quote-content .fancybox-close-small:focus:after{
+    background-color: transparent;
+}
+
+.pri-quote-content .fancybox-close-small:hover:after,
+.pri-quote-content .fancybox-close-small:focus:after{
+    background-color: transparent;
+}
+
+.fc-quote-content .fancybox-close-small:hover:after,
+.fc-quote-content .fancybox-close-small:focus:after{
+    background-color: transparent;
+}
+
+.fi-quote-content .fancybox-close-small:hover:after,
+.fi-quote-content .fancybox-close-small:focus:after{
+    background-color: transparent;
+}
 /* ===================================
    About Section
 ====================================== */
@@ -3311,6 +3531,19 @@ input.inputerror, textarea.inputerror, select.inputerror {
     }
 
     .quote-content {
+        padding: 50px 50px;
+    }
+
+    .rec-quote-content {
+        padding: 50px 50px;
+    }
+    .pri-quote-content {
+        padding: 50px 50px;
+    }
+    .fc-quote-content {
+        padding: 50px 50px;
+    }
+    .fi-quote-content {
         padding: 50px 50px;
     }
     .counter-list{
