@@ -322,29 +322,33 @@
                 </div>
             </div>
             <!--Get Recommendation Methodology Model Popup-->
-            <div class="animated-modal hidden rec-quote-content" id="recommendation">
+            <div class="animated-modal hidden quote-content" id="recommendation">
                 <div class="row">
                     <div class="col-lg-6">
+                        <br><br>
+                        <p class="paraText" style="font-size: medium; text-align: justify;">
+                            The consequent steps discussed were exerted when implementing the ad feature assimilated
+                            recommendation engine, which is ingenious in nature and unfathomed within its field of
+                            research. First of all, Id and description columns of 18,035 car records from the 'Used
+                            Car Dataset' were extracted after handling null and irrelevant values. Then, the
+                            description content was cleansed with a complex regex function prior to lowercase
+                            conversion and Penn Treebank tokenizing.
+                            Concluding those procedures, the description content was sent into TensorFlow USE model
+                            trained with a Deep Averaging Network (DAN) encoder, which uses DNN to find the best
+                            combination of 512-dimensional vector embeddings. It was used upon the tokenized form to
+                            give NLP incurred ad relatedness. DAN trained the encoder itself by having preconfigured
+                            parameters built within its library for the encoder to map any text into embeddings, as
+                            shown in the below figure.
+                        </p>
+                        <br>
                         <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                            <img alt="image" src="agency/img/vector-art-4.png">
+                            <img alt="image" src="agency/img/recommendations-system-diagram.png">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="heading-area">
                             <br><br>
                             <p class="paraText" style="font-size: medium; text-align: justify;">
-                                The consequent steps discussed were exerted when implementing the ad feature assimilated
-                                recommendation engine, which is ingenious in nature and unfathomed within its field of
-                                research. First of all, Id and description columns of 18,035 car records from the 'Used
-                                Car Dataset' were extracted after handling null and irrelevant values. Then, the
-                                description content was cleansed with a complex regex function prior to lowercase
-                                conversion and Penn Treebank tokenizing.
-                                Concluding those procedures, the description content was sent into TensorFlow USE model
-                                trained with a Deep Averaging Network (DAN) encoder, which uses DNN to find the best
-                                combination of 512-dimensional vector embeddings. It was used upon the tokenized form to
-                                give NLP incurred ad relatedness. DAN trained the encoder itself by having preconfigured
-                                parameters built within its library for the encoder to map any text into embeddings, as
-                                shown in the below figure.
                                 Furthermore, a Golang API was created to calculate the cosine similarity of those
                                 generated embeddings prior to sorting them from highest to lowest. New embedding
                                 generation for freshly submitted ads was supported from this API; hence concurrently
@@ -359,6 +363,10 @@
                                 procedure. Thus, model retraining is deemed unnecessary, unlike other traditional
                                 recommendation techniques.
                             </p>
+                            <br>
+                            <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                                <img alt="image" src="agency/img/google-USE.png">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -395,27 +403,30 @@
                                 selecting records where year >= 1975, price <= $100000 and price>= $750 (Handling
                                     Outliers), and categorical variable conversion to numerical with One- Hot-Encoding
                                     method which transforms values into either 1 or 0, giving it a realistic data
-                                    interpretation than Label Encoding.
-                                    A comparative study was conducted focusing on the performance of 15 ML algorithms
-                                    available in the Scikit-learn library, namely Extra Trees, Bagging, RF, Gradient
-                                    Boosting, Decision Trees, K-nearest Neighbors (KNN), Support Vector Machine (SVM),
-                                    Lasso, Ridge, Elastic Net, AdaBoost, Multilayer Perceptron (MLP), Linear SVR,
-                                    Stochastic Gradient Descent (SGD), and Multiple Linear Regressors.
-                                    Feature scaling (normalization) was used to deal with KNN, SVR and SGD regressors.
-                                    Each model was trained and evaluated with the same train, and test data associating
-                                    K- Fold Cross-Validation with a split ratio of 75:25:10 multiple times to make the
-                                    models less biased and account for every observation until satisfactory results
-                                    emerge, and overfitting was eradicated to a commendable extent, enhancing
-                                    generalization.
+                                    interpretation than Label Encoding.A comparative study was conducted focusing on the
+                                    performance of 15 ML algorithms available in the Scikit-learn library, namely
+
                             </p>
                         </div>
-
+                        <br>
+                        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                            <img alt="image" src="agency/img/price-prediction-system-diagram.png">
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="heading-area">
                             <br><br>
                             <p class="paraText" style="font-size: medium; text-align: justify;">
-                                Regression-based model proficiency in forecasting continuous values [9], unselected
+                                Extra Trees, Bagging, RF, Gradient Boosting, Decision Trees, K-nearest Neighbors (KNN),
+                                Support Vector Machine (SVM),Lasso, Ridge, Elastic Net, AdaBoost, Multilayer Perceptron
+                                (MLP), Linear SVR,Stochastic Gradient Descent (SGD), and Multiple Linear Regressors.
+                                Feature scaling (normalization) was used to deal with KNN, SVR and SGD regressors.
+                                Each model was trained and evaluated with the same train, and test data associating
+                                K- Fold Cross-Validation with a split ratio of 75:25:10 multiple times to make the
+                                models less biased and account for every observation until satisfactory results
+                                emerge, and overfitting was eradicated to a commendable extent, enhancing
+                                generalization. Regression-based model proficiency in forecasting continuous values [9],
+                                unselected
                                 classification route for this study. RandomizedSearchCV and GridSearchCV were used when
                                 determining the most optimized hyperparameters for the success of the above models.
                                 R-squared value (R2), adjusted R2, relative squared error (RSE), and root mean square
@@ -426,8 +437,9 @@
                                 advertisement submission form in Tievs front-end app.
                             </p>
                         </div>
+                        <br>
                         <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                            <img alt="image" src="agency/img/work-3.jpg">
+                            <img alt="image" src="agency/img/15-regressor.png">
                         </div>
                     </div>
 
@@ -448,6 +460,7 @@
                     <div class="col-lg-6">
                         <div class="heading-area">
                             <br><br>
+
                             <p class="paraText" style="font-size: medium; text-align: justify;">
                                 Aiming to foresee the likelihood of fraudulent content prior ad submission, an initial
                                 dataset of 23,000 records was labelled as legitimate and illegitimate, where the latter
@@ -458,40 +471,42 @@
                                 eliminate all interference from inputs that would otherwise obstruct the potential to
                                 distinguish positive and negative classifiers. Snowball Stemmer algorithm, which
                                 eliminates affixes to retrieve the basic form of words, was utilized as a stemming
-                                technique due to its computational speed.
-                                Moreover, raw text was essentially converted into a number of vectors to perform in ML
-                                models due to its impotence to directly operate textual forms. Then, a Bag of Words
-                                (BOW) model was developed to extract characteristics from the text before the
-                                implementation of the TF-IDF NLP vectorization technique to evaluate the significance of
-                                text data and serialize them for further transformation.
-                                Subsequently, the Scikit-learn library was utilized to convert text content into a
-                                matrix of numbers that could be fed to the classifier. This study was initiated to
-                                evaluate the expertise of 7 ML algorithms such as Decision Tree, RF, SVM, KNN, XGBoost,
-                                XGBRF, and Light Gradient Boosting Machine (LightGBM) classifier in a comparative
-                                analysis after vectorization. Each classifier was trained and tested in the same 75:25
-                                ratio until the optimal model would be exposed in terms of F1 score (accuracy and
-                                recall) and confusion matrix.
+                                technique due to its computational speed. Moreover, raw text was essentially converted
+                                into a number of vectors to perform in ML models due to its impotence to directly
+                                operate textual forms.
+                                Then, a Bag of Words (BOW) model was developed to extract characteristics from the text
+                                before the
+                                <br>
                             </p>
+                            <div class="half-img mt-4 pt-4 mt-lg-0 pt-lg-0">
+                                <img alt="image" src="agency/img/content-fraud-system-diagram.png">
+                            </div>
                         </div>
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="heading-area">
-                            <br><br>
-                            <p class="paraText" style="font-size: medium; text-align: justify;">
-                                Based on iteration, the highest max depth value was identified from parameter tuning
-                                compared with depth-wise growth and competency to accomplish random grid selection of
-                                the most pertinent parameters for the best classifier. After successful embedding of the
-                                trained model in the REST API, it could classify ad content as legitimate or not and
-                                display caution Tievs near advertisement submission when indispensable.
-                            </p>
-                        </div><br>
-                        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                            <img alt="image" src="agency/img/work-3.jpg">
+                        <br><br>
+                        <p class="paraText" style="font-size: medium; text-align: justify;">
+                            implementation of the TF-IDF NLP vectorization technique to evaluate the significance of
+                            text data and serialize them forfurther transformation. Subsequently, the Scikit-learn
+                            library was utilized to convert text
+                            content into a matrix of numbers that could be fed to the classifier. This study was
+                            initiated to
+                            evaluate the expertise of 7 ML algorithms such as Decision Tree, RF, SVM, KNN, XGBoost,
+                            XGBRF, and Light Gradient Boosting Machine (LightGBM) classifier in a comparative
+                            analysis after vectorization. Each classifier was trained and tested in the same 75:25
+                            ratio until the optimal model would be exposed in terms of F1 score (accuracy and
+                            recall) and confusion matrix.
+                            Based on iteration, the highest max depth value was identified from parameter tuning
+                            compared with depth-wise growth and competency to accomplish random grid selection of
+                            the most pertinent parameters for the best classifier. After successful embedding of the
+                            trained model in the REST API, it could classify ad content as legitimate or not and
+                            display caution Tievs near advertisement submission when indispensable.
+                        </p>
+                        <div class="half-img mt-2 pt-2 mt-lg-0 pt-lg-0">
+                            <img alt="image" src="agency/img/metho-fraud-content.png">
                         </div>
-
                     </div>
-
                 </div>
                 <!--Button-->
                 <div class="col-md-12">
@@ -507,13 +522,8 @@
             <div class="animated-modal hidden quote-content" id="fraudImage">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-                            <img alt="image" src="agency/img/vector-art-4.png">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
                         <div class="heading-area">
-                            <br><br>
+                            <br>
                             <p class="paraText" style="font-size: medium; text-align: justify;">
                                 The Deep Learning algorithm, Convolution Neural Network (CNN), was stipulated and in its
                                 convolutional layer, initial image feature learning was done using the
@@ -525,8 +535,20 @@
                                 traits and optimizing processing power. These 2 layers executed continuously and
                                 fastidiously trained the CNN model in discerning image qualities successfully.
                                 The final output was flattened and column vectorized before classification through a
-                                fully connected feed-forward neural network layer. With backpropagation applied
-                                iterative training, the model could discriminate high/low-level image features
+                                fully connected feed-forward neural network layer.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                            <img alt="image" src="agency/img/image-fraud-system-diagram.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading-area">
+                            <br>
+                            <p class="paraText" style="font-size: medium; text-align: justify;">
+                                With backpropagation applied iterative training, the model could discriminate
+                                high/low-level image features
                                 preparatory to effectuating Softmax classification. After the model was thoroughly
                                 tested on the accuracy, it was capable of identifying ad permissible car images by the
                                 manufacturer as well as prohibited images. The specific ML API was created using the
@@ -536,6 +558,10 @@
                                 parameters to reduce overfitting probability and considering neighbor context (images in
                                 this scenario) information to note similarities.
                             </p>
+                            <br>
+                        </div>
+                        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
+                            <img alt="image" src="agency/img/metho-image.png">
                         </div>
                     </div>
                 </div>
@@ -1272,7 +1298,8 @@
                         </div>
                         <span class="text-blue">/</span>
                         <div class="cbp-filter-item" data-filter=".registration">Project Registration<div
-                                class="cbp-filter-counter" style="background-color: blueviolet;"></div>
+                                class="cbp-filter-counter" style="background-color: blueviolet;">
+                            </div>
                         </div>
                         <span class="text-blue"> / </span>
                         <div class="cbp-filter-item" data-filter=".proposal">Project Proposal Reports<div
