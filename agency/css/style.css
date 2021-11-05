@@ -168,7 +168,7 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 .alt-color{color: #03a9f5;}
 .alt-color2{color:lightcyan}
 .alt-color3{color:rgb(170, 84, 231)}
-.alt-color4{color:rgb(84, 231, 101)}
+.alt-color4{color:rgb(53, 142, 64)}
 
 .gradient-text1{
     background: #da398f;
@@ -1448,7 +1448,7 @@ span.anchor-circle{
     background: url("../img/parallax1.png");
 }
 .parallax2 {
-    background: url("../img/parallax2.png") !important;
+    background: url("../img/award.png") !important;
 }
 .parallax-setting {
     -webkit-background-size: cover;
@@ -1944,6 +1944,7 @@ span.anchor-circle{
 
 .news-item{
     position: relative;
+    cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
@@ -1960,7 +1961,7 @@ span.anchor-circle{
 }
 
 .news-item:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .12);
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 
@@ -1975,11 +1976,11 @@ span.anchor-circle{
 .news-item .news-title{
     margin: 10px 0;
     font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
 .news-item .news-title:hover{
