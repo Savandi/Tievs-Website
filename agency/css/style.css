@@ -1458,6 +1458,16 @@ span.anchor-circle{
     overflow: hidden;
     width: 100%;
 }
+.parallax3 {
+    background: url("../img/metho-back.jpeg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+    width: 100%;
+}
 .parallax-setting {
     -webkit-background-size: cover;
     background-size: cover;
